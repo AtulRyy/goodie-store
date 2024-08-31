@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/custom-styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/scroll-styles.css">
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      class="nav-menu flex justify-center items-center fixed -top-[100vh] left-0 h-screen w-full z-[999999] bg-[#000000d3] transition-all ease-in-out duration-500"
+    >
+      <div
+        class="nav-items w-[50%] h-[80%] text-gold poppins text-4xl text-center"
+      >
+        <ul class="h-full flex flex-col justify-evenly items-center">
+          <a href="./" class="w-fit"><li>Home</li></a>
+          <a href="./about.html" class="w-fit"><li>About</li></a>
+          <a href="./gifting-ideas-1.html " class="w-fit"
+            ><li>Gifting Ideas</li></a
+          >
+          <a href="./gifting-ideas-2.html" class="w-fit"><li>Services</li></a>
+          <a href="./clients.html" class="w-fit"><li>Clients</li></a>
+          <a href="./contact.html" class="w-fit"><li>Contact Us</li></a>
+        </ul>
+      </div>
+      <i
+        class="fas fa-times text-gold text-2xl absolute top-5 right-5"
+        onclick="closeMenu()"
+      ></i>
+    </div>
+    <div class="home-page relative lg:pb-20">
+      <div class="nav-bar-section slide-down">
+        <div class="top-bar relative w-full justify-center p-3 hidden lg:flex">
+          <div class="w-[70%] flex justify-end">
+            <div
+              class="top-bar-content flex items-center w-[45%] 2xl:w-[40%] justify-between"
+            >
+              <div class="bar-left flex items-center">
+                <div
+                  class="phone-number flex items-center text-xs 2xl:text-sm mr-5"
+                >
+                  <i class="fas fa-phone mr-2 text-sm h-auto"></i>
+                  <p class="text-sm text-[#B1B1B1]">+91 98765 0000</p>
+                </div>
+                <div class="email flex items-center text-sm">
+                  <i class="fas fas fa-map-marker-alt mr-2 text-sm"></i>
+                  <p class="text-sm text-[#B1B1B1]">gorupone@gmail.com</p>
+                </div>
+              </div>
+              <div class="socials flex items-center text-xs 2xl:text-sm">
+                <i class="fab fa-twitter text-sm"></i
+                ><i class="fab fa-facebook mx-2 text-sm"></i>
+                <i class="fab fa-linkedin text-sm"></i
+                ><i class="fab fa-instagram ml-2 text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-[70%] h-px bg-[#FFC000]"></div>
+        </div>
+        <nav class="flex justify-center w-full absolute p-3 z-50">
+          <div
+            class="nav-container w-[95%] lg:w-[70%] flex justify-between items-center"
+          >
+            <img
+              src="./assets/images/yellow-logo.png"
+              alt=""
+              class="lg:w-[234.68px] w-32 h-auto"
+            />
+            <ul
+              class="nav-links text-sm 2xl:text-lg w-[45%] 2xl:w-[40%] hidden lg:flex justify-between font-semibold"
+            >
+              <a
+                href="./"
+                class="w-fit nav-link-animation transition-all duration-300 ease-in-out active-link"
+                ><li>Home</li></a
+              >
+              <a
+                href="./about.html"
+                class="w-fit nav-link-animation transition-all duration-300 ease-in-out"
+                ><li>About</li></a
+              >
+              <a
+                href="./gifting-ideas-1.html"
+                class="w-fit nav-link-animation transition-all duration-300 ease-in-out"
+                ><li>Gifting Ideas</li></a
+              >
+              <a
+                href="./gifting-ideas-2.html"
+                class="w-fit nav-link-animation transition-all duration-300 ease-in-out"
+                ><li>Services</li></a
+              >
+              <a
+                href="./clients.html"
+                class="w-fit nav-link-animation transition-all duration-300 ease-in-out"
+                ><li>Clients</li></a
+              >
+              <a
+                href="./contact.html"
+                class="w-fit nav-link-animation transition-all duration-300 ease-in-out"
+                ><li>Contact Us</li></a
+              >
+            </ul>
+            <div class="block lg:hidden">
+              <i class="fas fa-bars text-gold text-xl" onclick="openMenu()"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        class="landing-page lg:h-screen w-full flex flex-col lg:flex-row justify-center items-center"
+      >
+        <div
+          class="landing-page-text flex flex-col lg:flex-row justify-center items-center lg:w-[50%] lg:h-full w-[95%] relative"
+        >
+          <img
+            src="assets/images/landing-page.png"
+            class="block lg:hidden"
+            alt=""
+          />
+          <!-- <div class="bg-[#131313d1] absolute top-0 left-0 w-full h-full -z-10 block lg:hidden"></div> -->
+          
+          <div class="text-content-landing lg:w-[60%] 2xl:w-[40%] w-fit px-3 2xl:ml-[20%] lg:ml-[35%]">
+            <div class="text-carousel owl-carousel">
+              <div class="w-80 h-96 p-5">
+                <h2 class="lg:text-4xl 2xl:text-5xl text-3xl text-gold mb-5">
+                  Lorem ipsum dolor sit amet,
+                </h2>
+                <p class="text-white 2xl:mb-16 mb-10">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis aut odio architecto aliquid ipsa modi
+                </p>
+                <a href="" class="w-fit"
+                  ><div
+                    class="home-page-button p-3 border border-gold hover:bg-gold group flex w-44 justify-between transition-all duration-500 ease-in-out"
+                  >
+                    <p class="text-white group-hover:text-black">READ</p>
+                    <i
+                      class="fas fa-arrow-right text-gold group-hover:text-black"
+                    ></i></div
+                ></a>
+              </div>
+              <div class="w-80 h-96 p-5">
+                <h2 class="lg:text-4xl 2xl:text-5xl text-3xl text-gold mb-5">
+                  Lorem ipsum dolor sit amet,
+                </h2>
+                <p class="text-white 2xl:mb-16 mb-10">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis aut odio architecto aliquid ipsa modi
+                </p>
+                <a href="" class="w-fit"
+                  ><div
+                    class="home-page-button p-3 border border-gold hover:bg-gold group flex w-44 justify-between transition-all duration-500 ease-in-out"
+                  >
+                    <p class="text-white group-hover:text-black">READ</p>
+                    <i
+                      class="fas fa-arrow-right text-gold group-hover:text-black"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="image-landing bg-[#f1f1f1] p-6 pr-0 h-fit relative -bottom-6 2xl:-bottom-14 hidden lg:block w-[60%]"
+        >
+          <div class="bg-[#EEDBB9] 2xl:pr-36 pt-7 owl-carousel landing-img  2xl:w-auto">
+            <img
+              src="./assets/images/landing-page.png"
+              alt=""
+              class="relative -left-16 lg:h-[600px] 2xl:h-auto"
+            />
+            <img
+              src="./assets/images/landing-page.png"
+              alt=""
+              class="relative -left-16  lg:h-[600px] 2xl:h-auto"
+            />
+          </div>
+        </div>
+
+        <div
+          class="black-bg lg:w-[50%] w-full h-[95vh] absolute bg-black top-0 left-0 -z-30"
+        ><img src="assets/images/abstract-black-glitter-texture.png" alt="" class="object-fit h-full"></div>
+        <div
+          class="black-bg w-[50%] h-screen absolute bg-white top-0 right-0 -z-10 hidden lg:block"
+        ></div>
+      </div>
+    </div>
+
+    <!-- ABOUT US STARTS HERE -->
+    <div class="bg-img">
+      <div class="about-us-section flex lg:py-32 pb-20 flex-col lg:flex-row">
+        <div class="relative 2xl:w-auto lg:w-[40%]">
+          <img src="./assets/images/About-us-gift.png" alt="" class=" slide-right"/>
+          <div
+            class="arched-white p-5 bg-white absolute 2xl:top-[15%] lg:top-[8%] right-[-25%] rounded-t-full hidden lg:block slide-up"
+          >
+            <img src="./assets/images/curved-gift.png" alt="" class="lg:w-52 lg:h-auto 2xl:size-auto" />
+          </div>
+        </div>
+        <div class="about-us-text 2xl:w-[50%] lg:w-[60%] flex justify-center relative">
+          <div class="about-us-width lg:w-[50%] w-[90%] lg:ml-12 py-5">
+            <h2 class="2xl:text-2xl lg:text-xl text-lg font-semibold slide-left">About Us</h2>
+            <h2 class="salsa 2xl:text-5xl text-3xl text-[#C6A465] my-5 mt-1 lg:text-4xl slide-left delay-300">
+              About Goodiestor
+            </h2>
+            <p class="2xl:text-lg lg:text-base">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+              dolor sit amet. Lorem ipsum
+            </p>
+            <div class="w-full flex justify-end 2xl:mt-20 lg:mt-16 mt-10">
+              <a href="" class="w-fit">
+                <button
+                  class="text-gold border border-gold px-5 py-3 hover:bg-gold hover:text-white transition-all ease-in-out duration-300"
+                >
+                  Read More <i class="fas fa-arrow-right ml-3"></i></button
+              ></a>
+            </div>
+          </div>
+          <img
+            src="assets/images/gift-box.png"
+            class="absolute 2xl:-bottom-16  2xl:left-20 bottom-10 left-2 hidden lg:block 2xl:size-auto lg:w-[200px] slide-left"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- ABOUT US ENDS HERE -->
+      <!-- GIFTING SOLUTIONS STARTS HERE -->
+      <div class="gifting-solutions flex justify-center py-10">
+        <div class="gift-solutions w-[90%] 2xl:w-[70%]">
+          <div
+            class="flex w-full justify-between lg:items-end flex-col lg:flex-row"
+          >
+            <div class="solution-headin">
+              <h2 class="2xl:text-2xl lg:text-xl text-lg font-semibold slide-left">Gifts</h2>
+              <h2 class="salsa 2xl:text-5xl lg:text-4xl text-3xl text-[#C6A465] my-5 mt-1 salsa slide-right">
+                Gifting Solutions
+              </h2>
+            </div>
+            <p class="lg:w-[40%] slide-right">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+              dolores praesentium minima distinctio tempora esse sunt eligendi
+              voluptatum,
+            </p>
+          </div>
+          <div class="owl-carousel vertical-carousel py-10">
+            <div class="w-full h-full relative group">
+              <img src="assets/images/vertical-image.png" alt="" />
+              <div
+                class="overlay-carousel h-full w-full group-hover:bg-[#000000c6] absolute top-0 left-0"
+              ></div>
+              <div
+                class="w-full h-full flex justify-center items-center absolute -bottom-[58%] lg:-bottom-[60%] left-0 group-hover:bottom-0 transition-all duration-500 ease-in-out"
+              >
+                <div class="carousel-text lg:w-[75%] w-[70%]">
+                  <h2 class="text-2xl lg:text-3xl text-white mb-5 salsa">
+                    Consultation
+                  </h2>
+                  <p class="text-sm lg:text-lg text-white">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Suscipit tenetur sed, iure obcaecati consequatur sunt ipsam
+                    at nostrum soluta. Tempora, rem? Nemo aspernatur, placeat
+                    molestiae laborum amet aliquam corporis suscipit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full h-full relative group">
+              <img src="assets/images/vertical-image.png" alt="" />
+              <div
+                class="overlay-carousel h-full w-full group-hover:bg-[#000000c6] absolute top-0 left-0"
+              ></div>
+              <div
+                class="w-full h-full flex justify-center items-center absolute -bottom-[58%] lg:-bottom-[60%] left-0 group-hover:bottom-0 transition-all duration-500 ease-in-out"
+              >
+                <div class="carousel-text lg:w-[75%] w-[70%]">
+                  <h2 class="text-2xl lg:text-3xl text-white mb-5 salsa">
+                    Consultation
+                  </h2>
+                  <p class="text-sm lg:text-lg text-white">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Suscipit tenetur sed, iure obcaecati consequatur sunt ipsam
+                    at nostrum soluta. Tempora, rem? Nemo aspernatur, placeat
+                    molestiae laborum amet aliquam corporis suscipit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-center">
+            <a href="#" class="w-fit"
+              ><button
+                class="px-2 py-4 border-gold border-2 hover:bg-gold hover:text-white text-gold w-40 items-center flex justify-between"
+              >
+                READ MORE <i class="fas fa-arrow-right text-gold"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GIFTING SOLUTIONS ENDS HERE -->
+
+    <!-- COUNTER STARTS HERE -->
+    <div class="counter-container relative">
+      <img src="./assets/images/overlay-img.png" alt="" />
+      <img src="assets/images/gift-grid-1.png" class="lg:hidden block" alt="" />
+      <div
+        class="cnter-text flex justify-evenly items-center flex-col lg:flex-row h-full w-full absolute top-0 left-0 bg-[#000000e4]"
+      >
+        <div class="cont text-center">
+          <h2
+            class="text-[#C6A465] text-4xl lg:text-7xl font-bold mb-3 lg:mb-6 ct-cont"
+          >
+            <span class="ct-num" data-target="1000">0</span>+
+          </h2>
+          <h2 class="text-xl lg:text-4xl text-white">Satisfied Clients</h2>
+        </div>
+        <div class="cont text-center">
+          <h2
+            class="text-[#C6A465] text-4xl lg:text-7xl font-bold mb-3 lg:mb-6"
+          >
+          <span class="ct-num" data-target="40000">0</span>
+          </h2>
+          <h2 class="text-xl lg:text-4xl text-white relative">
+            Promotional<br />Merchandise
+          </h2>
+        </div>
+        <div class="cont text-center">
+          <h2
+            class="text-[#C6A465] text-4xl lg:text-7xl font-bold mb-3 lg:mb-6"
+          >
+          <span class="ct-num" data-target="100">0</span>+
+          </h2>
+          <h2 class="text-xl lg:text-4xl text-white">Concepts</h2>
+        </div>
+      </div>
+    </div>
+    <!-- COUNTER ENDS HERE -->
+
+    <!-- OUR SERVICES STARTS HERE -->
+    <div class="our-services flex justify-center py-20">
+      <div class="our-services-container lg:w-[70%] w-[90%]">
+        <p class="lg:text-2xl text-lg font-semibold text-center slide-up">Services</p>
+        <h2
+          class="text-3xl lg:text-5xl text-gold mt-3 mb-5 lg:mb-10 text-center salsa slide-up"
+        >
+          Our Services
+        </h2>
+        <div class="horizontal-carousel">
+          <div class="carousel-item group relative w-fit overflow-hidden mx-5">
+            <img
+              src="./assets/images/carousel-horizontal-1.png"
+              alt=""
+              class="w-96 h-auto lg:w-auto"
+            />
+            <div
+              class="overlay-carousel h-full w-full group-hover:bg-[#000000c6] absolute top-0 left-0 transition-all ease-in-out duration-300"
+            ></div>
+            <div
+              class="w-full h-full flex justify-center items-center absolute -bottom-[62%] lg:-bottom-[60%] left-0 group-hover:bottom-0 transition-all duration-500 ease-in-out"
+            >
+              <div class="carousel-text lg:w-[75%] w-[70%]">
+                <h2
+                  class="text-2xl lg:text-3xl text-white mb-5 text-center salsa group-hover:-translate-x-20 lg:group-hover:-translate-x-32 group-hover:text-[#FFC000] transition-all ease-in-out duration-500"
+                >
+                  Consultation
+                </h2>
+                <p class="text-sm lg:text-lg text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Suscipit tenetur sed, iure obcaecati consequatur sunt ipsam at
+                  nostrum soluta. Tempora, rem? Nemo aspernatur, placeat
+                  molestiae laborum amet aliquam corporis suscipit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item group relative w-fit overflow-hidden mx-5">
+            <img
+              src="./assets/images/carousel-horizontal-1.png"
+              alt=""
+              class="w-96 h-auto lg:w-auto"
+            />
+            <div
+              class="overlay-carousel h-full w-full group-hover:bg-[#000000c6] absolute top-0 left-0"
+            ></div>
+            <div
+              class="w-full h-full flex justify-center items-center absolute -bottom-[62%] lg:-bottom-[60%] left-0 group-hover:bottom-0 transition-all duration-500 ease-in-out"
+            >
+              <div class="carousel-text lg:w-[75%] w-[70%]">
+                <h2
+                  class="text-2xl lg:text-3xl text-white mb-5 text-center salsa group-hover:-translate-x-20 lg:group-hover:-translate-x-32 group-hover:text-[#FFC000] transition-all ease-in-out duration-500"
+                >
+                  Consultation
+                </h2>
+                <p class="text-sm lg:text-lg text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Suscipit tenetur sed, iure obcaecati consequatur sunt ipsam at
+                  nostrum soluta. Tempora, rem? Nemo aspernatur, placeat
+                  molestiae laborum amet aliquam corporis suscipit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OUR SERVICES ENDS HERE -->
+
+    <!-- bgimg -->
+    <div class="bg-2">
+      <!-- CLIENTS STARTS HERE -->
+      <div class="clients-section py-10 lg:py-20 bg-[#f1f1f161]">
+        <div class="client-heading text-center">
+          <p class="lg:text-2xl text-lg font-semibold slide-right">Clients</p>
+          <h2 class="text-[#C6A465] lg:text-5xl text-2xl mt-3 salsa slide-left">Our Clients</h2>
+        </div>
+        <div
+          class="client-images flex flex-col lg:flex-row justify-between my-14  2xl:flex-nowrap 2xl:gap-5 lg:flex-wrap lg:gap-10"
+        >
+          <img
+            src="./assets/images/client1.png"
+            alt=""
+            class="w-[80%] mx-auto lg:w-auto lg:mx-0"
+          />
+          <img
+            src="./assets/images/client2.png"
+            alt=""
+            class="mt-5 lg:mt-0 w-[80%] mx-auto lg:w-auto lg:mx-0"
+          />
+          <img
+            src="./assets/images/client3.png"
+            alt=""
+            class="mt-5 lg:mt-0 w-[80%] mx-auto lg:w-auto lg:mx-0"
+          />
+          <img
+            src="./assets/images/client1.png"
+            alt=""
+            class="mt-5 lg:mt-0 w-[80%] mx-auto lg:w-auto lg:mx-0"
+          />
+          <img
+            src="./assets/images/client2.png"
+            alt=""
+            class="mt-5 lg:mt-0 w-[80%] mx-auto lg:w-auto lg:mx-0"
+          />
+          <img
+            src="./assets/images/client3.png"
+            alt=""
+            class="mt-5 lg:mt-0 w-[80%] mx-auto lg:w-auto lg:mx-0"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <a href="" class="w-fit text-center"
+            ><div
+              class="client-button border-2 text-[#C6A465] border-[#C6A465] p-2 px-5 flex justify-between items-center w-48 hover:bg-[#C6A465] hover:text-white transition-all duration-300"
+            >
+              <h2 class="text-xl">ALL</h2>
+              <i class="fas fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
+      <!-- CLIENTS ENDS HERE -->
+
+      <!-- TESTIMONIAL STARTS HERE -->
+      <div
+        class="testimonial-section flex justify-between flex-col-reverse lg:flex-row py-10 lg:py-0"
+      >
+        <div class="test-left 2xl:w-[50%] lg:w-[70%] flex 2xl:justify-end justify-center">
+          <div class="lg:w-[70%] w-[90%] lg:py-28 py-10">
+            <div class="client-heading">
+              <p class="2xl:text-2xl text-lg font-semibold lg:text-xl slide-left">Testimonial</p>
+              <h2 class="text-[#C6A465] text-2xl 2xl:text-5xl lg:text-4xl lg:mt-3 mt-2 salsa slide-right">
+                Here's What Our Satisfied<br />Clients are Saying
+              </h2>
+            </div>
+            <div
+              class="testimonial-text flex lg:mt-32 mt-10 flex-col lg:flex-row justify-center items-center lg:justify-normal lg:items-start"
+            >
+              <div
+                class="profile-img relative w-fit h-fit lg:mr-10 mb-5 lg:mb-0 slide-right"
+              >
+                <img
+                  src="./assets/images/profile-image.png"
+                  alt=""
+                  class="w-24 lg:w-auto"
+                />
+                <div
+                  class="h-full w-full absolute rounded-full border-2 border-gray-400 lg:top-2 lg:left-2 top-1 left-1"
+                ></div>
+              </div>
+              <div class="text-testi lg:w-[60%] slide-down">
+                <p class="mb-5 lg:text-sm 2xl:text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore nam iure, iusto at exercitationem corrupti voluptate
+                  accusamus suscipit? Ipsam at, accusamus exercitationem aliquid
+                  eaque ex quo facilis recusandae eligendi commodi.
+                </p>
+                <h2 class="lg:text-xl text-lg font-bold">Sharon Gunther</h2>
+                <p class="text-[#B1B1B1] text-sm lg:text-base">Fresh Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/images/testimonial.png"
+          alt=""
+          class="2xl:w-[50%] lg:size-[700px] h-auto"
+        />
+      </div>
+    </div>
+    <!-- BG2 ENDS HERE -->
+    <!-- TESTIMONIAL ENDS HERE -->
+
+    <div class="bg-img">
+      <!-- BRANDS STARTS HERE -->
+      <div class="brands-section flex justify-center lg:py-20 py-10">
+        <div class="lg:w-[70%] w-[90%]">
+          <div class="br-head flex items-end justify-between">
+            <div class="client-heading">
+              <p class="lg:text-2xl text-lg font-semibold slide-right">Brands</p>
+              <h2 class="text-[#C6A465] lg:text-5xl text-2xl mt-3 salsa slide-left">
+                Trusted by 70,000+ Brands
+              </h2>
+            </div>
+            <div class="arrows hidden lg:block">
+              <i
+                class="far fa-arrow-alt-circle-left text-[#C6A465] text-4xl"
+              ></i
+              ><i
+                class="far fa-arrow-alt-circle-right text-[#C6A465] text-4xl ml-5"
+              ></i>
+              <i class="fa-arrow"></i>
+            </div>
+          </div>
+
+          <div
+            class="grid lg:grid-cols-4 gap-10 my-10 grid-cols-1 w-fit mx-auto slide-right"
+          >
+            <div>
+              <img src="./assets/images/client1.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client2.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client3.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client1.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client2.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client3.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client1.png" alt="" class="mx-auto" />
+            </div>
+            <div>
+              <img src="./assets/images/client2.png" alt="" class="mx-auto" />
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <a href="" class="w-fit text-center"
+              ><div
+                class="client-button border-2 text-[#C6A465] border-[#C6A465] p-2 px-5 flex justify-between items-center w-48 hover:bg-[#C6A465] hover:text-white transition-all duration-300"
+              >
+                <h2 class="text-xl">ALL</h2>
+                <i class="fas fa-arrow-right"></i></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- BRANDS ENDS HERE -->
+    </div>
+    <!-- BG IMG 3 ENDS HERE -->
+
+    <!-- BLOG STARTS HERE  -->
+    <div
+      class="blog-section flex justify-center bg-[#C6A465] lg:py-20 py-10 h-auto"
+    >
+      <div class="blog-continer lg:w-[70%] w-[90%] relative">
+        <div class="br-head flex items-end justify-between w-[105%]">
+          <div class="client-heading">
+            <p class="2xl:text-2xl lg:text-xl text-lg font-semibold text-white slide-right">Blog</p>
+            <h2 class="text-2xl text-black 2xl:text-5xl lg:text-4xl mt-3 salsa slide-left">
+              Our latest Blogs & News
+            </h2>
+          </div>
+          <div class="arrows hidden lg:block">
+            <i class="far fa-arrow-alt-circle-left text-[white] text-4xl"></i
+            ><i
+              class="far fa-arrow-alt-circle-right text-[white] text-4xl ml-5"
+            ></i>
+            <i class="fa-arrow"></i>
+          </div>
+        </div>
+        <img
+          src="./assets/images/gift-box.png"
+          alt=""
+          class="absolute 2xl:-top-56 lg:-top-48 lg:right-1 2xl:right-28 hidden lg:block lg:size-52 2xl:size-auto"
+        />
+        <div
+          class="blog-cards 2xl:w-[90%] mt-14 flex justify-between flex-col lg:flex-row"
+        >
+          <div class="blog-card w-fit text-white relative mb-10 lg:mb-0 slide-left">
+            <img src="./assets/images/blog-img.png" alt="" class="lg:size-96 2xl:size-auto" />
+
+            <div
+              class="blog-text w-full bg-[#C6A465] text-white lg:absolute -bottom-44 -right-28 py-2 px-3 lg:p-6 "
+            >
+              <h2 class="2xl:text-4xl lg:text-3xl text-xl lg:mb-3 2xl:mb-10 mb-5 salsa">
+                Lorem ipsum dolor sit amet, consectetur
+              </h2>
+              <p class="2xl:text-lg lg:text-base text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+                nobis quidem minus molestiae consequatur similique voluptates
+                quisquam. Quod quisquam rem, vel tenetur accusantium quis odit,
+                ratione voluptas nam quidem ullam?
+              </p>
+            </div>
+            <p
+              class="text-white lg:text-xl text-base absolute transform top-[25%] right-0 -rotate-90 origin-top-right py-4 "
+            >
+              August 31, 2023
+            </p>
+          </div>
+          <div class="blog-card w-fit text-white relative mb-10 lg:mb-0 slide-right">
+            <img src="./assets/images/blog-img.png" alt=""  class="lg:size-96 2xl:size-auto "/>
+
+            <div
+              class="blog-text w-full bg-[#C6A465] text-white lg:absolute -bottom-44 -right-28 py-2 px-3 lg:p-6"
+            >
+            <h2 class="2xl:text-4xl lg:text-3xl text-xl lg:mb-3 2xl:mb-10 mb-5 salsa">
+              Lorem ipsum dolor sit amet, consectetur
+            </h2>
+            <p class="2xl:text-lg lg:text-base text-sm">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+              nobis quidem minus molestiae consequatur similique voluptates
+              quisquam. Quod quisquam rem, vel tenetur accusantium quis odit,
+              ratione voluptas nam quidem ullam?
+            </p>
+            </div>
+            <p
+              class="text-white lg:text-xl text-base absolute transform top-[25%] right-0 -rotate-90 origin-top-right py-4 "
+            >
+              August 31, 2023
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center lg:mt-56">
+          <a href="" class="w-fit text-center"
+            ><div
+              class="client-button border-2 text-white border-white p-2 px-5 flex justify-between items-center w-48 hover:bg-[white] hover:text-[#C6A465] transition-all duration-300"
+            >
+              <h2 class="text-xl">View</h2>
+              <i class="fas fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- BLOG ENDS HERE -->
+    <my-footer></my-footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./assets/js/horizontal-carousel.js"></script>
+    <script src="./assets/js/head-foot-manager.js"></script>
+    <script src="./assets/js/counter.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+  </body>
+</html>

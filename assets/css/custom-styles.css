@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+    :root {
+    zoom: 0.8;
+    }}
+  
+.jost{
+    font-family: "Jost";
+}
+.salsa{
+    font-family: "Salsa";
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Jost";
+}
+.bg-img{
+    background-image: url('../images/bg-original.svg');
+    background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.bg-2{
+    background-image: url('../images/bg-2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: center;
+}
+.footer{
+    background-image: url('../images/abstract-black-glitter-texture.png');
+    background-size: cover;
+}
+/* .black-bg{
+    background-image: url('/assets/images/abstract-black-glitter-texture.png');
+    background-size: contain;
+    background-position: left;
+} */
+
+.active-link{
+    color: #FFC000;
+    
+    border-bottom: 2px #FFC000 solid;
+   
+    padding-bottom: 3px;
+}
+.nav-link-animation{
+    position: relative;
+}
+.nav-link-animation::before,
+    .nav-link-animation::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        background-color: #FFC000;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link-animation::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-link-animation::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .nav-link-animation:hover::before,
+    .nav-link-animation:hover::after {
+        width: 100%;
+    }
